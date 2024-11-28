@@ -1,0 +1,115 @@
+﻿body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+/* General Background */
+body {
+    background-color: #f8f9fa; /* Light grey background */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header and Title */
+h2 {
+    color: #007bff; /* Bright blue for headings */
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+.form-horizontal {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Form Buttons */
+.btn-default {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-default:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff; /* White background for the table */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .table th {
+        background-color: #007bff; /* Blue header */
+        color: #ffffff; /* White text */
+        padding: 10px;
+        text-align: left;
+    }
+
+    .table td {
+        border: 1px solid #dee2e6;
+        padding: 8px;
+        text-align: left;
+        color: #333; /* Dark text */
+    }
+
+    .table tr:nth-child(even) {
+        background-color: #f2f2f2; /* Alternate row color */
+    }
+
+    .table tr:hover {
+        background-color: #f1f1f1; /* Hover effect */
+    }
+
+/* Search Bar */
+input[type="text"] {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: calc(100% - 16px); /* Full width minus padding */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+        color: #0056b3;
+    }

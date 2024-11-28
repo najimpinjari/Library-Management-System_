@@ -1,0 +1,39 @@
+CREATE DATABASE LibraryDB;
+GO
+
+USE LibraryDB;
+GO
+
+CREATE TABLE tblBooks (
+    Id INT IDENTITY PRIMARY KEY,
+    Title VARCHAR(255) NOT NULL,
+    CategoryType VARCHAR(50) NOT NULL,
+    AuthorName VARCHAR(255) NOT NULL,
+    PublicationName VARCHAR(255) NOT NULL,
+    ISBN VARCHAR(20) NOT NULL UNIQUE,
+    CreatedBy VARCHAR(50) NOT NULL,
+    CreatedDate DATETIME NOT NULL DEFAULT GETDATE()
+);
+
+-- Insert categories into a reference table
+CREATE TABLE tblCategories (
+    Id INT IDENTITY PRIMARY KEY,
+    CategoryType VARCHAR(50) UNIQUE NOT NULL
+);
+
+INSERT INTO tblCategories (CategoryType)
+VALUES ('Mystery'), ('Horror'), ('Science fiction'), ('Thriller'), ('History');
+
+
+select * from tblBooks
+
+select * from tblCategories
+
+
+INSERT INTO tblBooks (Title, CategoryType, AuthorName, PublicationName, ISBN, CreatedBy, CreatedDate)
+VALUES
+('The Haunted Mansion', 'Horror', 'Ruskin Bond', 'Penguin Random House', '978-23-45055-03-7', 'Priya Singh', '2024-11-28 11:00:00'),
+('Journey to Mars', 'Science fiction', 'Chetan Bhagat', 'Macmillan', '978-01-23456-78-9', 'Rajesh Patel', '2024-11-28 12:00:00'),
+('The Cold Case', 'Thriller', 'Vikram Chandra', 'Simon & Schuster', '978-56-78901-23-4', 'Sneha Nair', '2024-11-28 13:00:00'),
+('A Brief History of Time', 'History', 'Amish Tripathi', 'Bantam Books', '978-11-98765-43-2', 'Anita Gupta', '2024-11-28 14:00:00');
+
